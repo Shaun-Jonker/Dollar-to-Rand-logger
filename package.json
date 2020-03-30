@@ -1,0 +1,25 @@
+{
+  "name": "dollar-to-rand",
+  "version": "1.0.0",
+  "description": "convert dollar to rand",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "d2r"
+  ],
+  "author": "Shaun Jonker",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "csvtojson": "^2.0.10",
+    "json2csv": "^5.0.0",
+    "node": "^13.12.0",
+    "request": "^2.88.2"
+  }
+}
