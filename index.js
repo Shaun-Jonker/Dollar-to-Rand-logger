@@ -14,6 +14,8 @@ function convert() {
         let price = exchange.text();
         let date = new Date().toUTCString();
 
+        console.log(`Price currently: ` + price);
+
         CSVToJson()
           .fromFile("./source.csv")
           .then(source => {
@@ -32,7 +34,9 @@ function convert() {
 }
 
 function post() {
+  console.log("Writing to file...");
   convert();
+
   setInterval(function() {
     convert();
   }, 300000);
